@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="GSI Oracle" max_length="40" name="x_grs_ceff_orcl" type="collection">
+        <element attributes="import_attribute_name=ACP_ID,edge_encryption_enabled=true" label="ACP_ID" max_length="40" name="u_acp_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ADDITIONAL_COMMENTS" max_length="40" name="u_additional_comments" type="string"/>
+        <element attributes="import_attribute_name=COMMENTS,edge_encryption_enabled=true" label="COMMENTS" max_length="4000" name="u_comments" type="string"/>
+        <element attributes="import_attribute_name=CRAFT,edge_encryption_enabled=true" label="CRAFT" max_length="300" name="u_craft" type="string"/>
+        <element attributes="import_attribute_name=DEFAULT_SKILL,edge_encryption_enabled=true" label="DEFAULT_SKILL" max_length="300" name="u_default_skill" type="string"/>
+        <element attributes="import_attribute_name=EMPLOYEE_EID" label="EMPLOYEE_EID" max_length="15" name="u_employee_eid" type="decimal"/>
+        <element attributes="import_attribute_name=EMPLOYEE_EMAIL,edge_encryption_enabled=true" label="EMPLOYEE_EMAIL" max_length="300" name="u_employee_email" type="string"/>
+        <element attributes="import_attribute_name=EMPLOYEE_FIRSTNAME,edge_encryption_enabled=true" label="EMPLOYEE_FIRSTNAME" max_length="200" name="u_employee_firstname" type="string"/>
+        <element attributes="import_attribute_name=EMPLOYEE_LASTNAME,edge_encryption_enabled=true" label="EMPLOYEE_LASTNAME" max_length="200" name="u_employee_lastname" type="string"/>
+        <element attributes="import_attribute_name=EMPLOYEE_MI,edge_encryption_enabled=true" label="EMPLOYEE_MI" max_length="300" name="u_employee_mi" type="string"/>
+        <element attributes="import_attribute_name=EMPLOYEE_ORACLEID,edge_encryption_enabled=true" label="EMPLOYEE_ORACLEID" max_length="40" name="u_employee_oracleid" type="string"/>
+        <element attributes="import_attribute_name=EMP_HOME_OFFICE,edge_encryption_enabled=true" label="EMP_HOME_OFFICE" max_length="300" name="u_emp_home_office" type="string"/>
+        <element attributes="import_attribute_name=EMP_SEGPROD_CODE,edge_encryption_enabled=true" label="EMP_SEGPROD_CODE" max_length="100" name="u_emp_segprod_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EVALUATOR_EMAIL" max_length="40" name="u_evaluator_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="EVALUTOR_EID" max_length="40" name="u_evalutor_eid" type="string"/>
+        <element attributes="import_attribute_name=FORMID" label="FORMID" max_length="15" name="u_formid" type="decimal"/>
+        <element attributes="import_attribute_name=FUTURE_REC,edge_encryption_enabled=true" label="FUTURE_REC" max_length="40" name="u_future_rec" type="string"/>
+        <element attributes="import_attribute_name=HR_ACTION,edge_encryption_enabled=true" label="HR_ACTION" max_length="40" name="u_hr_action" type="string"/>
+        <element attributes="import_attribute_name=HR_MANAGER_EID" label="HR_MANAGER_EID" max_length="15" name="u_hr_manager_eid" type="decimal"/>
+        <element attributes="import_attribute_name=HR_MANAGER_EMAIL,edge_encryption_enabled=true" label="HR_MANAGER_EMAIL" max_length="300" name="u_hr_manager_email" type="string"/>
+        <element attributes="import_attribute_name=HR_MANAGER_FIRSTNAME,edge_encryption_enabled=true" label="HR_MANAGER_FIRSTNAME" max_length="300" name="u_hr_manager_firstname" type="string"/>
+        <element attributes="import_attribute_name=HR_MANAGER_LASTNAME,edge_encryption_enabled=true" label="HR_MANAGER_LASTNAME" max_length="300" name="u_hr_manager_lastname" type="string"/>
+        <element attributes="import_attribute_name=HR_MANAGER_MI,edge_encryption_enabled=true" label="HR_MANAGER_MI" max_length="300" name="u_hr_manager_mi" type="string"/>
+        <element attributes="import_attribute_name=HR_MANAGER_ORACLEID" label="HR_MANAGER_ORACLEID" max_length="15" name="u_hr_manager_oracleid" type="decimal"/>
+        <element attributes="import_attribute_name=INTEGRITY" label="INTEGRITY" max_length="15" name="u_integrity" type="decimal"/>
+        <element attributes="import_attribute_name=INTERNAL_JOBTITLE,edge_encryption_enabled=true" label="INTERNAL_JOBTITLE" max_length="300" name="u_internal_jobtitle" type="string"/>
+        <element attributes="import_attribute_name=JOBID" label="JOBID" max_length="15" name="u_jobid" type="decimal"/>
+        <element attributes="import_attribute_name=NOT_REQUIRED,edge_encryption_enabled=true" label="NOT_REQUIRED" max_length="40" name="u_not_required" type="string"/>
+        <element attributes="import_attribute_name=PAYROLL_OFF,edge_encryption_enabled=true" label="PAYROLL_OFF" max_length="300" name="u_payroll_off" type="string"/>
+        <element attributes="import_attribute_name=PAYROLL_OFF_REG,edge_encryption_enabled=true" label="PAYROLL_OFF_REG" max_length="300" name="u_payroll_off_reg" type="string"/>
+        <element attributes="import_attribute_name=PRODUCTIVITY" label="PRODUCTIVITY" max_length="15" name="u_productivity" type="decimal"/>
+        <element attributes="import_attribute_name=PROJ_ENDDATE" label="PROJ_ENDDATE" max_length="40" name="u_proj_enddate" type="datetime"/>
+        <element attributes="import_attribute_name=PROJ_STARTDATE" label="PROJ_STARTDATE" max_length="40" name="u_proj_startdate" type="datetime"/>
+        <element attributes="import_attribute_name=QUALITY" label="QUALITY" max_length="15" name="u_quality" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="RECEIVED" max_length="40" name="u_received" type="string"/>
+        <element attributes="import_attribute_name=RESOURCE_MANAGER_EID" label="RESOURCE_MANAGER_EID" max_length="15" name="u_resource_manager_eid" type="decimal"/>
+        <element attributes="import_attribute_name=RESOURCE_MANAGER_EMAIL,edge_encryption_enabled=true" label="RESOURCE_MANAGER_EMAIL" max_length="300" name="u_resource_manager_email" type="string"/>
+        <element attributes="import_attribute_name=RESOURCE_MANAGER_FIRSTNAME,edge_encryption_enabled=true" label="RESOURCE_MANAGER_FIRSTNAME" max_length="300" name="u_resource_manager_firstname" type="string"/>
+        <element attributes="import_attribute_name=RESOURCE_MANAGER_LASTNAME,edge_encryption_enabled=true" label="RESOURCE_MANAGER_LASTNAME" max_length="300" name="u_resource_manager_lastname" type="string"/>
+        <element attributes="import_attribute_name=RESOURCE_MANAGER_MI,edge_encryption_enabled=true" label="RESOURCE_MANAGER_MI" max_length="300" name="u_resource_manager_mi" type="string"/>
+        <element attributes="import_attribute_name=RESOURCE_MANAGER_ORACLEID" label="RESOURCE_MANAGER_ORACLEID" max_length="15" name="u_resource_manager_oracleid" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="REVIEW_FROM" max_length="40" name="u_review_from" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="REVIEW_TO" max_length="40" name="u_review_to" type="string"/>
+        <element attributes="import_attribute_name=SAFETY" label="SAFETY" max_length="15" name="u_safety" type="decimal"/>
+        <element attributes="import_attribute_name=SEGMENT,edge_encryption_enabled=true" label="SEGMENT" max_length="300" name="u_segment" type="string"/>
+        <element attributes="import_attribute_name=SERVICE_MANAGER_EID" label="SERVICE_MANAGER_EID" max_length="15" name="u_service_manager_eid" type="decimal"/>
+        <element attributes="import_attribute_name=SERVICE_MANAGER_EMAIL,edge_encryption_enabled=true" label="SERVICE_MANAGER_EMAIL" max_length="300" name="u_service_manager_email" type="string"/>
+        <element attributes="import_attribute_name=SERVICE_MANAGER_FIRSTNAME,edge_encryption_enabled=true" label="SERVICE_MANAGER_FIRSTNAME" max_length="300" name="u_service_manager_firstname" type="string"/>
+        <element attributes="import_attribute_name=SERVICE_MANAGER_LASTNAME,edge_encryption_enabled=true" label="SERVICE_MANAGER_LASTNAME" max_length="300" name="u_service_manager_lastname" type="string"/>
+        <element attributes="import_attribute_name=SERVICE_MANAGER_MI,edge_encryption_enabled=true" label="SERVICE_MANAGER_MI" max_length="300" name="u_service_manager_mi" type="string"/>
+        <element attributes="import_attribute_name=SERVICE_MANAGER_ORACLEID" label="SERVICE_MANAGER_ORACLEID" max_length="15" name="u_service_manager_oracleid" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="SITEID" max_length="40" name="u_siteid" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SITE_CITY" max_length="40" name="u_site_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SITE_STREET" max_length="40" name="u_site_street" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="SITE_STREET2" max_length="40" name="u_site_street2" type="string"/>
+        <element attributes="import_attribute_name=SKILL,edge_encryption_enabled=true" label="SKILL" max_length="300" name="u_skill" type="string"/>
+        <element attributes="import_attribute_name=TEAMWORK" label="TEAMWORK" max_length="15" name="u_teamwork" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="TOTAL_CREW" max_length="40" name="u_total_crew" type="string"/>
+        <element attributes="import_attribute_name=TOTAL_SCORE" label="TOTAL_SCORE" max_length="15" name="u_total_score" type="decimal"/>
+    </element>
+</database>

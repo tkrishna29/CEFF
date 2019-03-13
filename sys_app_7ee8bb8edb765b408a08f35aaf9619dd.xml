@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <enforce_license>log</enforce_license>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_model>none</license_model>
+        <logo/>
+        <menu display_value="Crew/Employee Feedback Form">32e8bb02dbb65b408a08f35aaf9619c4</menu>
+        <name>Crew/Employee Feedback Form</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_grs_ceff</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>x_grs_ceff</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>a1</sys_created_by>
+        <sys_created_on>2018-06-21 14:33:03</sys_created_on>
+        <sys_id>7ee8bb8edb765b408a08f35aaf9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>a1</sys_updated_by>
+        <sys_updated_on>2018-06-21 14:33:03</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role display_value="x_grs_ceff.user" name="x_grs_ceff.user">7ee8bb02dbb65b408a08f35aaf9619c6</user_role>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+</record_update>

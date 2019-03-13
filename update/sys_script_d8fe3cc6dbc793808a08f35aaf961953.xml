@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_grs_ceff_headers</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_grs_ceff_headers">status=Reprocess^EQ<item endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Reprocess"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>You are Re-Processing the form. A new email will be generated and the earlier one with the form ID will be nullified and disabled.</p>
+<p> </p>]]></message>
+        <name>Reprocess </name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	
+var grHeader = new GlideRecord('x_grs_ceff_headers'); 
+	grHeader.initialize();
+	grHeader.acp_id = current.acp_id;
+	//grHeader.status = "New";
+	grHeader.insert();
+	// Add your code here
+	var gr = new GlideRecord('x_grs_ceff_lines');
+	gr.addQuery("form_id.number", current.number);
+	gr.query();
+	while(gr.next()){
+		//gr.deleteRecord();
+		//gs.addInfoMessage("Deleted");
+		gr.status = "Reprocessed";
+		}
+	
+		
+	//updateLines();
+})(current, previous);
+
+function updateLines(){
+	var acp = current.acp_id; 
+	var acpArray = acp.split(',');
+	for (var i = 0; i < acpArray.length; i++)  {
+	 //gs.info('The Array\\' + acpArray[i]);
+	var gr = new GlideRecord ('x_grs_ceff_data');
+	gr.addQuery('u_acpid',acpArray[i]);
+	gr.query();
+	if(gr.next()){
+	var lines = new GlideRecord('x_grs_ceff_lines');
+	lines.initialize();
+	// lines.gsi_number = current.number;
+	lines.form_id = current.sys_id;
+	lines.ref = current.number;
+		
+	lines.hr_manager_firstname = gr.u_hrmgr_fname;
+	lines.hr_manager_lastname = gr.u_hrmgr_lname;
+	lines.hr_manager_middilename = gr.u_hrmgr_mname;
+	lines.hr_manager_email = gr.u_hrmgr_email;
+	lines.hr_manager_oracle_id = gr.u_hrmgr_oid;
+	lines.hr_manager_eid = gr.u_hrmgr_eid;
+	lines.employee_id =gr.u_eid;
+	lines.acp_id = gr.u_acpid;
+	lines.event_end_date = gr.u_end_date;
+	lines.event_start_date = gr.u_start_date;
+	lines.job_id = gr.u_jid;
+		
+	lines.employee_firstname = gr.u_e_fname;
+	lines.employee_lastname = gr.u_e_lname;
+	lines.employee_middlename = gr.u_e_mname;
+	lines.employee_id = gr.u_e_eid;
+	lines.employee_oracle_id = gr.u_e_oid;
+	lines.employee_email = gr.u_e_email;
+		
+	lines.job_primary_title_name = gr.u_titlename;
+	lines.job_skill = gr.u_jobskill;
+	lines.job_title_prefix = gr.u_prefix;
+	lines.job_title_suffix = gr.u_suffix;
+	lines.office_gsi_region = gr.u_gsiregion;
+	lines.office_name = gr.u_name;
+	lines.home_office_id = gr.u_officeid;
+		
+	lines.resource_manager_eid = gr.u_rmgr_eid;
+	lines.resource_manager_firstname = gr.u_rmgr_fname;
+	lines.resource_manager_lastname = gr.u_rmgr_lname;
+	lines.resource_manager_middlename = gr.u_rmgr_mname;
+	lines.resource_manager_email = gr.u_rmgr_email;
+	lines.resource_manager_oracle_id = gr.u_rmgr_oid;
+		
+	lines.service_manager_eid = gr.u_smgr_eid;
+	lines.service_manager_email = gr.u_smgr_email;
+	lines.service_manager_firstname = gr.u_smgr_fname;
+	lines.service_manager_lastname = gr.u_smgr_lname;
+	lines.service_manager_middilename = gr.u_smgr_mname;
+	lines.service_manager_oracle_id = gr.u_smgr_oid;
+		
+	lines.employee_owner_first_name = gr.owner_fname;
+	lines.employee_owner_last_name = gr.owner_lname;
+	lines.employee_owner_middle_name = gr.owner_mname;
+	lines.employee_owner_emp_id = gr.owner_eid;
+	lines.employee_owner_oracle_id = gr.owner_oid;
+	lines.employee_owner_email_id = gr.owner_email;
+		
+	lines.status = 'Reprocess';
+	lines.insert();
+		
+}
+   //current.status = 'Sent';
+   //current.update();
+ }
+ 
+ 
+	
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>abhinav</sys_created_by>
+        <sys_created_on>2018-07-03 11:17:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8fe3cc6dbc793808a08f35aaf961953</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Reprocess </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+        <sys_update_name>sys_script_d8fe3cc6dbc793808a08f35aaf961953</sys_update_name>
+        <sys_updated_by>abhinav</sys_updated_by>
+        <sys_updated_on>2018-07-03 21:43:21</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d8fe3cc6dbc793808a08f35aaf961953"/>
+</record_update>

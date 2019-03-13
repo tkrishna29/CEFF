@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PS Source Data" max_length="40" name="x_grs_ceff_data" sizeclass="44274" type="collection">
+        <element label="Transform Map" max_length="32" name="sys_transform_map" reference="sys_transform_map" type="reference"/>
+        <element label="acpid" max_length="50" name="u_acpid" type="string" unique="true"/>
+        <element label="approved" max_length="50" name="u_approved" type="string"/>
+        <element label="approvedby" max_length="50" name="u_approvedby" type="string"/>
+        <element label="deprecated" max_length="50" name="u_deprecated" type="string"/>
+        <element label="eid" max_length="50" name="u_eid" type="string"/>
+        <element label="end_date" max_length="40" name="u_end_date" type="glide_date"/>
+        <element label="etid" max_length="50" name="u_etid" type="string"/>
+        <element label="eval_eid" max_length="50" name="u_eval_eid" type="string"/>
+        <element label="eval_email" max_length="50" name="u_eval_email" type="string"/>
+        <element label="eval_fname" max_length="50" name="u_eval_fname" type="string"/>
+        <element label="eval_lname" max_length="50" name="u_eval_lname" type="string"/>
+        <element label="eval_mname" max_length="50" name="u_eval_mname" type="string"/>
+        <element label="eval_oid" max_length="50" name="u_eval_oid" type="string"/>
+        <element label="evid" max_length="50" name="u_evid" type="string"/>
+        <element label="e_eid" max_length="50" name="u_e_eid" type="string"/>
+        <element label="e_email" max_length="50" name="u_e_email" type="string"/>
+        <element label="e_fname" max_length="50" name="u_e_fname" type="string"/>
+        <element label="e_lname" max_length="50" name="u_e_lname" type="string"/>
+        <element label="e_mname" max_length="50" name="u_e_mname" type="string"/>
+        <element label="e_oid" max_length="50" name="u_e_oid" type="string"/>
+        <element label="gsiregion" max_length="50" name="u_gsiregion" type="string"/>
+        <element label="hrmgr_eid" max_length="50" name="u_hrmgr_eid" type="string"/>
+        <element label="hrmgr_email" max_length="50" name="u_hrmgr_email" type="string"/>
+        <element label="hrmgr_fname" max_length="50" name="u_hrmgr_fname" type="string"/>
+        <element label="hrmgr_lname" max_length="50" name="u_hrmgr_lname" type="string"/>
+        <element label="hrmgr_mname" max_length="50" name="u_hrmgr_mname" type="string"/>
+        <element label="hrmgr_oid" max_length="50" name="u_hrmgr_oid" type="string"/>
+        <element label="jid" max_length="50" name="u_jid" type="string"/>
+        <element label="jobpc" max_length="50" name="u_jobpc" type="string"/>
+        <element label="jobskill" max_length="50" name="u_jobskill" type="string"/>
+        <element label="Home Office" max_length="50" name="u_name" type="string"/>
+        <element label="Home Office ID" max_length="50" name="u_officeid" type="string"/>
+        <element label="owner_eid" max_length="50" name="u_owner_eid" type="string"/>
+        <element label="owner_email" max_length="50" name="u_owner_email" type="string"/>
+        <element label="owner_fname" max_length="50" name="u_owner_fname" type="string"/>
+        <element label="owner_lname" max_length="50" name="u_owner_lname" type="string"/>
+        <element label="owner_mname" max_length="50" name="u_owner_mname" type="string"/>
+        <element label="owner_oid" max_length="50" name="u_owner_oid" type="string"/>
+        <element label="persontitle" max_length="50" name="u_persontitle" type="string"/>
+        <element label="phys_addr" max_length="50" name="u_phys_addr" type="string"/>
+        <element label="phys_addr2" max_length="50" name="u_phys_addr2" type="string"/>
+        <element label="phys_city" max_length="50" name="u_phys_city" type="string"/>
+        <element label="phys_state" max_length="50" name="u_phys_state" type="string"/>
+        <element label="phys_zip" max_length="50" name="u_phys_zip" type="string"/>
+        <element label="prefix" max_length="50" name="u_prefix" type="string"/>
+        <element label="p_country" max_length="50" name="u_p_country" type="string"/>
+        <element label="qcicraft" max_length="50" name="u_qcicraft" type="string"/>
+        <element label="resid" max_length="50" name="u_resid" type="string"/>
+        <element label="rid" max_length="50" name="u_rid" type="string"/>
+        <element label="rmgr_eid" max_length="50" name="u_rmgr_eid" type="string"/>
+        <element label="rmgr_email" max_length="50" name="u_rmgr_email" type="string"/>
+        <element label="rmgr_fname" max_length="50" name="u_rmgr_fname" type="string"/>
+        <element label="rmgr_lname" max_length="50" name="u_rmgr_lname" type="string"/>
+        <element label="rmgr_mname" max_length="50" name="u_rmgr_mname" type="string"/>
+        <element label="rmgr_oid" max_length="50" name="u_rmgr_oid" type="string"/>
+        <element label="siteid" max_length="50" name="u_siteid" type="string"/>
+        <element label="sitename" max_length="50" name="u_sitename" type="string"/>
+        <element label="smgr_eid" max_length="50" name="u_smgr_eid" type="string"/>
+        <element label="smgr_email" max_length="50" name="u_smgr_email" type="string"/>
+        <element label="smgr_fname" max_length="50" name="u_smgr_fname" type="string"/>
+        <element label="smgr_lname" max_length="50" name="u_smgr_lname" type="string"/>
+        <element label="smgr_mname" max_length="50" name="u_smgr_mname" type="string"/>
+        <element label="smgr_oid" max_length="50" name="u_smgr_oid" type="string"/>
+        <element label="start_date" max_length="40" name="u_start_date" type="glide_date"/>
+        <element label="status" max_length="50" name="u_status" type="string"/>
+        <element label="suffix" max_length="50" name="u_suffix" type="string"/>
+        <element label="titlename" max_length="50" name="u_titlename" type="string"/>
+        <index name="index">
+            <element name="u_acpid"/>
+        </index>
+        <index name="index2">
+            <element name="sys_transform_map"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sys_user" relationship="" sys_domain="global" table="sys_user_grmember" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>group</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="sys_user" relationship="NULL" sys_domain="global" view="Default view">2c18e263b0801100d32242e4872a0b23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>SNC_PS</sys_created_by>
+            <sys_created_on>2013-10-02 14:08:48</sys_created_on>
+            <sys_id>a818e263b0801100d32242e4872a0b24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SNC_PS</sys_updated_by>
+            <sys_updated_on>2013-10-02 14:08:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="sys_user" relationship="NULL" sys_domain="global" view="Default view">2c18e263b0801100d32242e4872a0b23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>SNC_PS</sys_created_by>
+            <sys_created_on>2013-10-02 14:08:48</sys_created_on>
+            <sys_id>2c18e263b0801100d32242e4872a0b24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SNC_PS</sys_updated_by>
+            <sys_updated_on>2013-10-02 14:08:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user.phone</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="sys_user" relationship="NULL" sys_domain="global" view="Default view">2c18e263b0801100d32242e4872a0b23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>SNC_PS</sys_created_by>
+            <sys_created_on>2013-10-02 14:08:48</sys_created_on>
+            <sys_id>ac18e263b0801100d32242e4872a0b24</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SNC_PS</sys_updated_by>
+            <sys_updated_on>2013-10-02 14:08:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>user.mobile_phone</element>
+            <list_id display_value="sys_user_grmember" element="NULL" name="sys_user_grmember" parent="sys_user" relationship="NULL" sys_domain="global" view="Default view">2c18e263b0801100d32242e4872a0b23</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>SNC_PS</sys_created_by>
+            <sys_created_on>2013-10-02 14:08:48</sys_created_on>
+            <sys_id>2018e263b0801100d32242e4872a0b25</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>SNC_PS</sys_updated_by>
+            <sys_updated_on>2013-10-02 14:08:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_user_grmember</name>
+            <parent>sys_user</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>503045518</sys_created_by>
+            <sys_created_on>2018-10-09 13:51:39</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e45e82a9db45278065eff438bf961996</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>503045518</sys_updated_by>
+            <sys_updated_on>2018-10-09 13:51:39</sys_updated_on>
+            <sys_user display_value="Ashok Kumar Pally">5f91cd7ddb7553087ddafce9af9619f0</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

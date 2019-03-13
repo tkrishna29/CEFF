@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="resource_manager_last_name" label="Resource Manager Last Name" language="en" table="x_grs_ceff_headers">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>resource_manager_last_name</element>
+            <help/>
+            <hint/>
+            <label>Resource Manager Last Name</label>
+            <language>en</language>
+            <name>x_grs_ceff_headers</name>
+            <plural>Resource Manager Last Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 15:19:41</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>bd9344dadbb65b408a08f35aaf961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Resource Manager Last Name</sys_name>
+            <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+            <sys_update_name>sys_documentation_x_grs_ceff_headers_resource_manager_last_name_en</sys_update_name>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 15:19:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

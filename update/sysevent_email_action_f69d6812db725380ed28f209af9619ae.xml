@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_grs_ceff_headers</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name>approval.cancelled</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<div>
+<div>
+<div>Dear ${evaluator_firstname},&nbsp;</div>
+</div>
+<div>&nbsp;</div>
+<div>Please complete the <a title="Crew Employee Feedback Form (CEFF)" href="https://fieldcore.service-now.com/sp/?id=crew_employee_feedback_form&amp;sys_id=${sys_id}">Crew Employee Feedback Form (CEFF)</a>&nbsp; within the next 7 business days. Your input is critical to maintain quality level service and meet client expectations.&nbsp;&nbsp;&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<div>&nbsp;</div>
+<div>
+<div>You will receive reminder messages for 2 weeks until we have received your completed form.</div>
+<div>&nbsp;</div>
+<div>If you have any questions relative to this requirement, please contact one of the following along with the Reference ID: #${number}</div>
+<div>&nbsp;</div>
+<div>Service Manager - ${service_manager_first_name} ${service_manager_last_name}</div>
+<div>&nbsp;</div>
+<div>HR Manager - ${hr_manager_first_name} ${hr_manager_last_name}</div>
+<div>&nbsp;</div>
+<div>For Technical Support -<strong>&nbsp;<a title="ServiceNow Support" href="https://mytech.ge.com/help-and-support-redirect?locale=en">ServiceNow Support</a></strong></div>
+<div>&nbsp;</div>
+<div>
+<div><a href="#mce_temp_url#">&nbsp;</a></div>
+<div>&nbsp;</div>
+<div>Thank you,</div>
+<div>FieldCore Services, Inc</div>
+<p><span style="color: #303a46; font-family: Roboto, SourceSansPro, Helvetica, Arial, sans-serif; font-size: 14px; white-space: pre-wrap;">&nbsp;</span></p>
+<strong><span class="CmCaReT" style="display: none;">�</span></strong></div>
+</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>PS CEFF Email</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>evaluator_email</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Crew Employee Feedback Form (CEFF) #${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>Raghu.Kumar</sys_created_by>
+        <sys_created_on>2018-06-21 18:26:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f69d6812db725380ed28f209af9619ae</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>PS CEFF Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+        <sys_update_name>sysevent_email_action_f69d6812db725380ed28f209af9619ae</sys_update_name>
+        <sys_updated_by>abhinav.nishant</sys_updated_by>
+        <sys_updated_on>2018-07-05 20:35:29</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_payroll_off_reg" label="PAYROLL_OFF_REG" language="en" table="x_grs_ceff_orcl">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_payroll_off_reg</element>
+            <help/>
+            <hint/>
+            <label>PAYROLL_OFF_REG</label>
+            <language>en</language>
+            <name>x_grs_ceff_orcl</name>
+            <plural>PAYROLL_OFF_REGs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>abhinav.nishant</sys_created_by>
+            <sys_created_on>2018-07-05 20:15:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>558d853adb0b53c07ddafce9af961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>PAYROLL_OFF_REG</sys_name>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+            <sys_update_name>sys_documentation_x_grs_ceff_orcl_u_payroll_off_reg_en</sys_update_name>
+            <sys_updated_by>abhinav.nishant</sys_updated_by>
+            <sys_updated_on>2018-07-05 20:15:22</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

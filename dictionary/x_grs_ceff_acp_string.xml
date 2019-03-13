@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="GetPSACPString" max_length="40" name="x_grs_ceff_acp_string" type="collection">
+        <element attributes="import_attribute_name=evaluatorid" label="evaluatorid" max_length="40" name="u_evaluatorid" type="integer"/>
+        <element attributes="import_attribute_name=GROUP_CONCAT_CONVERT_a_acpid__CHAR_8___,edge_encryption_enabled=true" label="GROUP_CONCAT_CONVERT_a_acpid__CHAR_8___" max_length="341" name="u_group_concat_pid__char_8___" type="string"/>
+        <element attributes="import_attribute_name=updated" label="updated" max_length="40" name="u_updated" type="integer"/>
+    </element>
+</database>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>jdbc:mysql://10.1.0.84:3306/powersource</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name>powersource</database_name>
+        <database_port>3306</database_port>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>org.mariadb.jdbc.Driver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>ACP String</import_set_table_label>
+        <import_set_table_name>x_grs_ceff_acp_string</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>6F48RnNuqNc=</jdbc_password>
+        <jdbc_server>10.1.0.84</jdbc_server>
+        <jdbc_user_name>livecycle</jdbc_user_name>
+        <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
+        <last_run_database_field>a.updated</last_run_database_field>
+        <last_run_datetime>'1528969617'</last_run_datetime>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">088c073ddbce43805559785e0f961988</mid_server>
+        <name>GetPSACPString</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>SELECT&#13;
+     &#13;
+     &#13;
+j.updated,&#13;
+a.evaluatorid,GROUP_CONCAT(CONVERT(a.acpid, CHAR(8)))&#13;
+&#13;
+    FROM &#13;
+     acp a, job j, `events` e, entity p&#13;
+    WHERE&#13;
+     a.jobid=j.jid&#13;
+     AND a.acpid = e.rid&#13;
+     AND a.evaluatorid = p.eid&#13;
+     AND a.status=10&#13;
+     AND a.evaluatorid &gt; 2&#13;
+     AND e.end_date &gt;= DATE_SUB(CURDATE(),INTERVAL 2 WEEK)&#13;
+AND a.acpid NOT IN (SELECT recordid FROM autoscript_notifs WHERE pageid=3) &#13;
+    &#13;
+     GROUP BY evaluatorid&#13;
+     </sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>Raghu.Kumar</sys_created_by>
+        <sys_created_on>2018-06-21 17:49:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1c35a41adb325380ed28f209af9619ef</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_name>GetPSACPString</sys_name>
+        <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+        <sys_update_name>sys_data_source_1c35a41adb325380ed28f209af9619ef</sys_update_name>
+        <sys_updated_by>503045518</sys_updated_by>
+        <sys_updated_on>2018-10-18 20:05:45</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

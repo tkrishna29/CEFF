@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="PS Import Data" max_length="40" name="x_grs_ceff_ps_source_data_import" sizeclass="70785" type="collection">
+        <element attributes="import_attribute_name=acpid" label="acpid" max_length="40" name="u_acpid" type="integer"/>
+        <element attributes="import_attribute_name=end_date" label="end_date" max_length="40" name="u_end_date" type="date"/>
+        <element attributes="import_attribute_name=eval_eid" label="eval_eid" max_length="40" name="u_eval_eid" type="integer"/>
+        <element attributes="import_attribute_name=eval_email,edge_encryption_enabled=true" label="eval_email" max_length="80" name="u_eval_email" type="string"/>
+        <element attributes="import_attribute_name=eval_fname,edge_encryption_enabled=true" label="eval_fname" max_length="40" name="u_eval_fname" type="string"/>
+        <element attributes="import_attribute_name=eval_lname,edge_encryption_enabled=true" label="eval_lname" max_length="40" name="u_eval_lname" type="string"/>
+        <element attributes="import_attribute_name=eval_mname,edge_encryption_enabled=true" label="eval_mname" max_length="40" name="u_eval_mname" type="string"/>
+        <element attributes="import_attribute_name=eval_oid,edge_encryption_enabled=true" label="eval_oid" max_length="40" name="u_eval_oid" type="string"/>
+        <element attributes="import_attribute_name=e_eid" label="e_eid" max_length="40" name="u_e_eid" type="integer"/>
+        <element attributes="import_attribute_name=e_email,edge_encryption_enabled=true" label="e_email" max_length="80" name="u_e_email" type="string"/>
+        <element attributes="import_attribute_name=e_fname,edge_encryption_enabled=true" label="e_fname" max_length="40" name="u_e_fname" type="string"/>
+        <element attributes="import_attribute_name=e_lname,edge_encryption_enabled=true" label="e_lname" max_length="40" name="u_e_lname" type="string"/>
+        <element attributes="import_attribute_name=e_mname,edge_encryption_enabled=true" label="e_mname" max_length="40" name="u_e_mname" type="string"/>
+        <element attributes="import_attribute_name=e_oid,edge_encryption_enabled=true" label="e_oid" max_length="40" name="u_e_oid" type="string"/>
+        <element attributes="import_attribute_name=gsiregion,edge_encryption_enabled=true" label="gsiregion" max_length="40" name="u_gsiregion" type="string"/>
+        <element attributes="import_attribute_name=hrmgr_eid" label="hrmgr_eid" max_length="40" name="u_hrmgr_eid" type="integer"/>
+        <element attributes="import_attribute_name=hrmgr_email,edge_encryption_enabled=true" label="hrmgr_email" max_length="80" name="u_hrmgr_email" type="string"/>
+        <element attributes="import_attribute_name=hrmgr_fname,edge_encryption_enabled=true" label="hrmgr_fname" max_length="40" name="u_hrmgr_fname" type="string"/>
+        <element attributes="import_attribute_name=hrmgr_lname,edge_encryption_enabled=true" label="hrmgr_lname" max_length="40" name="u_hrmgr_lname" type="string"/>
+        <element attributes="import_attribute_name=hrmgr_mname,edge_encryption_enabled=true" label="hrmgr_mname" max_length="40" name="u_hrmgr_mname" type="string"/>
+        <element attributes="import_attribute_name=hrmgr_oid,edge_encryption_enabled=true" label="hrmgr_oid" max_length="40" name="u_hrmgr_oid" type="string"/>
+        <element attributes="import_attribute_name=jid" label="jid" max_length="40" name="u_jid" type="integer"/>
+        <element attributes="import_attribute_name=jobpc,edge_encryption_enabled=true" label="jobpc" max_length="40" name="u_jobpc" type="string"/>
+        <element attributes="import_attribute_name=jobskill,edge_encryption_enabled=true" label="jobskill" max_length="40" name="u_jobskill" type="string"/>
+        <element attributes="import_attribute_name=name,edge_encryption_enabled=true" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=officeid" label="officeid" max_length="40" name="u_officeid" type="integer"/>
+        <element attributes="import_attribute_name=owner_eid" label="owner_eid" max_length="40" name="u_owner_eid" type="integer"/>
+        <element attributes="import_attribute_name=owner_email,edge_encryption_enabled=true" label="owner_email" max_length="80" name="u_owner_email" type="string"/>
+        <element attributes="import_attribute_name=owner_fname,edge_encryption_enabled=true" label="owner_fname" max_length="40" name="u_owner_fname" type="string"/>
+        <element attributes="import_attribute_name=owner_lname,edge_encryption_enabled=true" label="owner_lname" max_length="40" name="u_owner_lname" type="string"/>
+        <element attributes="import_attribute_name=owner_mname,edge_encryption_enabled=true" label="owner_mname" max_length="40" name="u_owner_mname" type="string"/>
+        <element attributes="import_attribute_name=owner_oid,edge_encryption_enabled=true" label="owner_oid" max_length="40" name="u_owner_oid" type="string"/>
+        <element attributes="import_attribute_name=persontitle,edge_encryption_enabled=true" label="persontitle" max_length="80" name="u_persontitle" type="string"/>
+        <element attributes="import_attribute_name=phys_addr,edge_encryption_enabled=true" label="phys_addr" max_length="60" name="u_phys_addr" type="string"/>
+        <element attributes="import_attribute_name=phys_addr2,edge_encryption_enabled=true" label="phys_addr2" max_length="60" name="u_phys_addr2" type="string"/>
+        <element attributes="import_attribute_name=phys_city,edge_encryption_enabled=true" label="phys_city" max_length="60" name="u_phys_city" type="string"/>
+        <element attributes="import_attribute_name=phys_state,edge_encryption_enabled=true" label="phys_state" max_length="60" name="u_phys_state" type="string"/>
+        <element attributes="import_attribute_name=phys_zip,edge_encryption_enabled=true" label="phys_zip" max_length="40" name="u_phys_zip" type="string"/>
+        <element attributes="import_attribute_name=prefix,edge_encryption_enabled=true" label="prefix" max_length="40" name="u_prefix" type="string"/>
+        <element attributes="import_attribute_name=p_country,edge_encryption_enabled=true" label="p_country" max_length="40" name="u_p_country" type="string"/>
+        <element attributes="import_attribute_name=qcicraft,edge_encryption_enabled=true" label="qcicraft" max_length="40" name="u_qcicraft" type="string"/>
+        <element attributes="import_attribute_name=rmgr_eid" label="rmgr_eid" max_length="40" name="u_rmgr_eid" type="integer"/>
+        <element attributes="import_attribute_name=rmgr_email,edge_encryption_enabled=true" label="rmgr_email" max_length="80" name="u_rmgr_email" type="string"/>
+        <element attributes="import_attribute_name=rmgr_fname,edge_encryption_enabled=true" label="rmgr_fname" max_length="40" name="u_rmgr_fname" type="string"/>
+        <element attributes="import_attribute_name=rmgr_lname,edge_encryption_enabled=true" label="rmgr_lname" max_length="40" name="u_rmgr_lname" type="string"/>
+        <element attributes="import_attribute_name=rmgr_mname,edge_encryption_enabled=true" label="rmgr_mname" max_length="40" name="u_rmgr_mname" type="string"/>
+        <element attributes="import_attribute_name=rmgr_oid,edge_encryption_enabled=true" label="rmgr_oid" max_length="40" name="u_rmgr_oid" type="string"/>
+        <element attributes="import_attribute_name=siteid" label="siteid" max_length="40" name="u_siteid" type="integer"/>
+        <element attributes="import_attribute_name=sitename,edge_encryption_enabled=true" label="sitename" max_length="80" name="u_sitename" type="string"/>
+        <element attributes="import_attribute_name=smgr_eid" label="smgr_eid" max_length="40" name="u_smgr_eid" type="integer"/>
+        <element attributes="import_attribute_name=smgr_email,edge_encryption_enabled=true" label="smgr_email" max_length="80" name="u_smgr_email" type="string"/>
+        <element attributes="import_attribute_name=smgr_fname,edge_encryption_enabled=true" label="smgr_fname" max_length="40" name="u_smgr_fname" type="string"/>
+        <element attributes="import_attribute_name=smgr_lname,edge_encryption_enabled=true" label="smgr_lname" max_length="40" name="u_smgr_lname" type="string"/>
+        <element attributes="import_attribute_name=smgr_mname,edge_encryption_enabled=true" label="smgr_mname" max_length="40" name="u_smgr_mname" type="string"/>
+        <element attributes="import_attribute_name=smgr_oid,edge_encryption_enabled=true" label="smgr_oid" max_length="40" name="u_smgr_oid" type="string"/>
+        <element attributes="import_attribute_name=start_date" label="start_date" max_length="40" name="u_start_date" type="date"/>
+        <element attributes="import_attribute_name=suffix,edge_encryption_enabled=true" label="suffix" max_length="40" name="u_suffix" type="string"/>
+        <element attributes="import_attribute_name=titlename,edge_encryption_enabled=true" label="titlename" max_length="40" name="u_titlename" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="updated" max_length="40" name="u_updated" type="string"/>
+    </element>
+</database>

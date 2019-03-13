@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>3000</connection_timeout>
+        <connection_url>jdbc:mysql://10.1.0.84:3306/powersource</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name>powersource</database_name>
+        <database_port>3306</database_port>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>org.mariadb.jdbc.Driver</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>PS  Source Data Import</import_set_table_label>
+        <import_set_table_name>x_grs_ceff_ps_source_data_import</import_set_table_name>
+        <instance_name/>
+        <jdbc_password>6F48RnNuqNc=</jdbc_password>
+        <jdbc_server>10.1.0.84</jdbc_server>
+        <jdbc_user_name>livecycle</jdbc_user_name>
+        <jdbcprobe_result_set_rows/>
+        <jpath_root_node/>
+        <last_run_database_field>a.updated</last_run_database_field>
+        <last_run_datetime>'1546251971'</last_run_datetime>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server display_value="">088c073ddbce43805559785e0f961988</mid_server>
+        <name>PS Source Data</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>Specific SQL</query>
+        <query_timeout>3000</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement>SELECT&#13;
+ &#13;
+a.updated,&#13;
+a.acpid, &#13;
+ev.start_date, &#13;
+ ev.end_date, &#13;
+ s.sitename,&#13;
+ s.phys_addr,&#13;
+ s.phys_addr2,&#13;
+ s.phys_city,&#13;
+ s.phys_state,&#13;
+ s.phys_zip,&#13;
+ s.p_country,&#13;
+ eval.firstname "eval_fname", &#13;
+ eval.lastname "eval_lname",&#13;
+ eval.email "eval_email",&#13;
+ eval.eid "eval_eid",&#13;
+ eval.oracleid "eval_oid",&#13;
+ eval.middle "eval_mname",&#13;
+ eval.persontitle,&#13;
+ s.siteid,&#13;
+ owner.eid "owner_eid", &#13;
+ owner.firstname "owner_fname",&#13;
+ owner.middle "owner_mname",&#13;
+ owner.lastname "owner_lname",&#13;
+ owner.email "owner_email",&#13;
+ owner.oracleid "owner_oid",&#13;
+ rmgr.eid "rmgr_eid", &#13;
+ rmgr.firstname "rmgr_fname",&#13;
+ rmgr.middle "rmgr_mname",&#13;
+ rmgr.lastname "rmgr_lname",&#13;
+ rmgr.email "rmgr_email",&#13;
+ rmgr.oracleid "rmgr_oid",&#13;
+ hrmgr.eid "hrmgr_eid",&#13;
+ hrmgr.firstname "hrmgr_fname",&#13;
+ hrmgr.middle "hrmgr_mname",&#13;
+ hrmgr.lastname "hrmgr_lname",&#13;
+ hrmgr.email "hrmgr_email",&#13;
+ hrmgr.oracleid "hrmgr_oid",&#13;
+ svcmgr.eid "smgr_eid",&#13;
+ svcmgr.firstname "smgr_fname",&#13;
+ svcmgr.middle "smgr_mname",&#13;
+ svcmgr.lastname "smgr_lname",&#13;
+ svcmgr.email "smgr_email",&#13;
+ svcmgr.oracleid "smgr_oid",&#13;
+ o.name,&#13;
+ o.officeid,&#13;
+ o.gsiregion,&#13;
+ j.jid,&#13;
+ j.jobpc,&#13;
+ j.jobskill,&#13;
+ jtprefix.prefix,&#13;
+ jtpri.titlename,&#13;
+ jtsec.titlename,&#13;
+ jtsuffix.suffix,&#13;
+ j.qcicraft,&#13;
+ emp.eid "e_eid", &#13;
+ emp.firstname "e_fname",&#13;
+ emp.middle "e_mname",&#13;
+ emp.lastname "e_lname",&#13;
+ emp.email "e_email",&#13;
+ emp.oracleid "e_oid"&#13;
+ FROM &#13;
+ job AS j, &#13;
+ jtprefixlist AS jtprefix,&#13;
+ jtprimarylist AS jtpri,&#13;
+ jtsecondarylist AS jtsec,&#13;
+ jtsuffixlist AS jtsuffix,&#13;
+ acp AS a, &#13;
+ `events` AS ev, &#13;
+ officeinfo AS o,&#13;
+ site AS s,&#13;
+ entity AS emp,&#13;
+ entity AS svcmgr, &#13;
+ entity AS eval &#13;
+ LEFT JOIN entity AS `owner` ON (eval.empowner = owner.eid)&#13;
+ INNER JOIN entity AS hrmgr ON (eval.hrmanager = hrmgr.eid)&#13;
+ INNER JOIN entity AS rmgr ON (eval.resourcemanager = rmgr.eid) &#13;
+ WHERE &#13;
+ j.siteid = s.siteid&#13;
+ AND eval.homeoffice = o.officeid&#13;
+ AND a.jobid=j.jid&#13;
+ AND eval.eid = a.evaluatorid&#13;
+ AND ev.rid = a.acpid&#13;
+ AND ev.eid = emp.eid&#13;
+ AND svcmgr.eid=j.owner &#13;
+ AND j.jtprefixid = jtprefix.prefixid&#13;
+ AND j.jtprimaryid = jtpri.primaryid&#13;
+ AND j.jtsecondaryid =  jtsec.secondaryid&#13;
+AND j.jtsuffixid = jtsuffix.suffixid&#13;
+AND ev.end_date &gt;= DATE_SUB(CURDATE(), INTERVAL 16 WEEK) &#13;
+</sql_statement>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>Raghu.Kumar</sys_created_by>
+        <sys_created_on>2018-06-21 17:32:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5030a096db325380ed28f209af961961</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_name>PS Source Data</sys_name>
+        <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+        <sys_update_name>sys_data_source_5030a096db325380ed28f209af961961</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-12-31 12:00:14</sys_updated_on>
+        <table_name/>
+        <type>JDBC</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>true</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

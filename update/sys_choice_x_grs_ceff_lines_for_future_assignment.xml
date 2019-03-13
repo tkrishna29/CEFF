@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="for_future_assignment" table="x_grs_ceff_lines" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>for_future_assignment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 22:00:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>564f1592dbfa5b408a08f35aaf9619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 22:00:27</sys_updated_on>
+            <value>No</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>for_future_assignment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yes</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:59:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df2f1592dbfa5b408a08f35aaf9619fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:59:57</sys_updated_on>
+            <value>Yes</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>for_future_assignment</element>
+            <name>x_grs_ceff_lines</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:59:57</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>1f8dc53adb0b53c07ddafce9af9619df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>for_future_assignment</sys_name>
+            <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+            <sys_update_name>sys_choice_x_grs_ceff_lines_for_future_assignment</sys_update_name>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:59:57</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_rmgr_eid" label="rmgr_eid" language="en" table="x_grs_ceff_data">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_rmgr_eid</element>
+            <help/>
+            <hint/>
+            <label>rmgr_eid</label>
+            <language>en</language>
+            <name>x_grs_ceff_data</name>
+            <plural>rmgr_eids</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Raghu.Kumar</sys_created_by>
+            <sys_created_on>2018-06-21 16:01:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>cb1dcc56dbfe1380ed28f209af96193c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rmgr_eid</sys_name>
+            <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+            <sys_update_name>sys_documentation_x_grs_ceff_data_u_rmgr_eid_en</sys_update_name>
+            <sys_updated_by>Raghu.Kumar</sys_updated_by>
+            <sys_updated_on>2018-06-21 16:01:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

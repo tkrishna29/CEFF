@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PS Headers" max_length="40" name="x_grs_ceff_headers" type="collection">
+        <element label="ACP ID" max_length="150" name="acp_id" type="string" unique="true"/>
+        <element label="Average Crew Rating" max_length="40" name="average" type="float"/>
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <element label="Evaluator EID" max_length="40" name="evaluator_eid" type="integer"/>
+        <element label="Evaluator Email" max_length="40" name="evaluator_email" type="string"/>
+        <element label="Evaluator Firstname" max_length="40" name="evaluator_firstname" type="string"/>
+        <element label="Evaluator Lastname" max_length="40" name="evaluator_lastname" type="string"/>
+        <element label="Evaluator Middle Name" max_length="40" name="evaluator_middle_name" type="string"/>
+        <element label="Evaluator Oracle ID" max_length="40" name="evaluator_oracle_id" type="integer"/>
+        <element label="Evaluator Title" max_length="40" name="evaluator_title" type="string"/>
+        <element label="Home Office" max_length="50" name="home_office" type="string"/>
+        <element label="Home Office ID" max_length="50" name="home_office_id" type="string"/>
+        <element label="HR Manager Email" max_length="40" name="hr_manager" type="string"/>
+        <element label="HR Manager EID" max_length="40" name="hr_manager_eid" type="integer"/>
+        <element label="HR Manager First Name" max_length="40" name="hr_manager_first_name" type="string"/>
+        <element label="HR Manager Last Name" max_length="40" name="hr_manager_last_name" type="string"/>
+        <element label="HR Manager Middle Name" max_length="40" name="hr_manager_middle_name" type="string"/>
+        <element label="HR Manager Oracle ID" max_length="40" name="hr_manager_oracle_id" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string" unique="true"/>
+        <element label="Owner  EID" max_length="40" name="owner_eid" type="integer"/>
+        <element label="Owner Email" max_length="40" name="owner_email" type="string"/>
+        <element label="Owner First Name" max_length="40" name="owner_first_name" type="string"/>
+        <element label="Owner Last Name" max_length="40" name="owner_last_name" type="string"/>
+        <element label="Owner Oracle ID" max_length="40" name="owner_oracle_id" type="integer"/>
+        <element label="Physical Address" max_length="40" name="physical_address" type="string"/>
+        <element label="Physical Address 2" max_length="40" name="physical_address_2" type="string"/>
+        <element label="Physical City" max_length="40" name="physical_city" type="string"/>
+        <element label="Physical State" max_length="40" name="physical_state" type="string"/>
+        <element label="Physical Zip" max_length="40" name="physical_zip" type="string"/>
+        <element label="Resource Manager EID" max_length="40" name="resource_manager_eid" type="integer"/>
+        <element label="Resource Manager Email" max_length="40" name="resource_manager_email" type="string"/>
+        <element label="Resource Manager First Name" max_length="40" name="resource_manager_first_name" type="string"/>
+        <element label="Resource Manager Last Name" max_length="40" name="resource_manager_last_name" type="string"/>
+        <element label="Resource Manager Middle Name" max_length="40" name="resource_manager_middle_name" type="string"/>
+        <element label="Resource Manager Oracle ID" max_length="40" name="resource_manager_oracle_id" type="integer"/>
+        <element label="Review Period From" max_length="40" name="review_period_from" type="glide_date"/>
+        <element label="Review Period To" max_length="40" name="review_period_to" type="glide_date"/>
+        <element label="Service Manager EID" max_length="40" name="service_manager_eid" type="integer"/>
+        <element label="Service Manager Email" max_length="40" name="service_manager_email" type="string"/>
+        <element label="Service Manager First Name" max_length="40" name="service_manager_first_name" type="string"/>
+        <element label="Service Manager Last Name" max_length="40" name="service_manager_last_name" type="string"/>
+        <element label="Service Manager Middle Name" max_length="40" name="service_manager_middle_name" type="string"/>
+        <element label="Service Manager Oracle ID" max_length="40" name="service_manager_oracle_id" type="integer"/>
+        <element label="Site ID" max_length="40" name="site_id" type="integer"/>
+        <element label="Site Name" max_length="40" name="site_name" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Complete" value="Complete"/>
+                <element label="New" value="New"/>
+                <element label="Processed" value="Processed"/>
+                <element label="Reminder1" value="Reminder1"/>
+                <element label="Reprocess" value="Reprocess"/>
+                <element label="Sent" value="Sent"/>
+                <element label="Updated" value="Updated"/>
+            </choice>
+        </element>
+        <element label="Total Crew" max_length="2" name="total_crew" type="integer"/>
+        <element label="Unique" max_length="150" name="unique" type="string"/>
+        <index name="index">
+            <element name="acp_id"/>
+        </index>
+        <index name="index2">
+            <element name="number"/>
+        </index>
+    </element>
+</database>

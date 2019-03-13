@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="PS Lines" max_length="40" name="x_grs_ceff_lines" type="collection">
+        <element label="acps" max_length="10" name="acps" type="string"/>
+        <element label="ACP ID" max_length="50" name="acp_id" type="string" unique="true"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10; var ttl = parseInt(current.integrity) + parseInt(current.safety)+parseInt(current.teamwork) + parseInt(current.productivity) + parseInt(current.quality);&#10;&#9;&#10;&#9;var avg = ttl/5;&#10;&#9;current.average = avg;&#10;&#9;// Add your code here&#10;&#9;return 'avg';  // return the calculated value&#10;&#10;})(current);" label="Average" max_length="40" name="average" type="float" virtual="true"/>
+        <element label="Employee Email" max_length="50" name="employee_email" type="string"/>
+        <element label="Employee Firstname" max_length="50" name="employee_firstname" type="string"/>
+        <element label="Employee ID" max_length="40" name="employee_id" type="integer"/>
+        <element label="Employee Lastname" max_length="50" name="employee_lastname" type="string"/>
+        <element label="Employee Middlename" max_length="50" name="employee_middlename" type="string"/>
+        <element label="Employee Oracle ID" max_length="40" name="employee_oracle_id" type="integer"/>
+        <element label="Employee Owner Email ID" max_length="40" name="employee_owner_email_id" type="string"/>
+        <element label="Employee Owner Emp ID" max_length="40" name="employee_owner_emp_id" type="integer"/>
+        <element label="Employee Owner First Name" max_length="40" name="employee_owner_first_name" type="string"/>
+        <element label="Employee Owner Last Name" max_length="40" name="employee_owner_last_name" type="string"/>
+        <element label="Employee Owner Middle Name" max_length="40" name="employee_owner_middle_name" type="string"/>
+        <element label="Employee Owner Oracle ID" max_length="40" name="employee_owner_oracle_id" type="integer"/>
+        <element label="Evaluator Comments" max_length="200" name="evaluator_comments" type="string"/>
+        <element label="Event End Date" max_length="50" name="event_end_date" type="glide_date"/>
+        <element label="Event Start Date" max_length="50" name="event_start_date" type="glide_date"/>
+        <element label="Form ID" max_length="32" name="form_id" reference="x_grs_ceff_headers" type="reference"/>
+        <element choice="1" label="would you recommend for future assignment?" max_length="50" name="for_future_assignment" type="choice">
+            <choice>
+                <element label="No" value="No"/>
+                <element label="Yes" value="Yes"/>
+            </choice>
+        </element>
+        <element label="Home Office ID" max_length="50" name="home_office_id" type="string"/>
+        <element label="HR Manager EID" max_length="40" name="hr_manager_eid" type="integer"/>
+        <element label="HR Manager Email" max_length="50" name="hr_manager_email" type="string"/>
+        <element label="HR Manager Firstname" max_length="50" name="hr_manager_firstname" type="string"/>
+        <element label="HR Manager Lastname" max_length="50" name="hr_manager_lastname" type="string"/>
+        <element label="HR Manager Middilename" max_length="50" name="hr_manager_middilename" type="string"/>
+        <element label="HR Manager Oracle ID" max_length="40" name="hr_manager_oracle_id" type="integer"/>
+        <element choice="1" label="Integrity" max_length="50" name="integrity" type="choice">
+            <choice>
+                <element label="1" value="1"/>
+                <element label="2" value="2"/>
+                <element label="3" value="3"/>
+                <element label="4" value="4"/>
+                <element label="5" value="5"/>
+            </choice>
+        </element>
+        <element label="Job ID" max_length="50" name="job_id" type="string"/>
+        <element label="Job Primary Title Name" max_length="50" name="job_primary_title_name" type="string"/>
+        <element label="Job Secondary Title Name" max_length="50" name="job_secondary_title_name" type="string"/>
+        <element label="Job Skill" max_length="50" name="job_skill" type="string"/>
+        <element label="Job Title Prefix" max_length="50" name="job_title_prefix" type="string"/>
+        <element label="Job Title Suffix" max_length="50" name="job_title_suffix" type="string"/>
+        <element label="Office GSI Region" max_length="50" name="office_gsi_region" type="string"/>
+        <element label="Home Office" max_length="50" name="office_name" type="string"/>
+        <element choice="1" label="Productivity" max_length="40" name="productivity" type="choice">
+            <choice>
+                <element label="1" value="1"/>
+                <element label="2" value="2"/>
+                <element label="3" value="3"/>
+                <element label="4" value="4"/>
+                <element label="5" value="5"/>
+            </choice>
+        </element>
+        <element choice="1" label="Quality" max_length="40" name="quality" type="choice">
+            <choice>
+                <element label="1" value="1"/>
+                <element label="2" value="2"/>
+                <element label="3" value="3"/>
+                <element label="4" value="4"/>
+                <element label="5" value="5"/>
+            </choice>
+        </element>
+        <element label="REF#" max_length="40" name="ref" type="string"/>
+        <element label="Resource manager EID" max_length="40" name="resource_manager_eid" type="integer"/>
+        <element label="Resource Manager Email" max_length="50" name="resource_manager_email" type="string"/>
+        <element label="Resource Manager Firstname" max_length="50" name="resource_manager_firstname" type="string"/>
+        <element label="Resource Manager Lastname" max_length="50" name="resource_manager_lastname" type="string"/>
+        <element label="Resource Manager Middlename" max_length="50" name="resource_manager_middlename" type="string"/>
+        <element label="Resource Manager Oracle ID" max_length="40" name="resource_manager_oracle_id" type="integer"/>
+        <element choice="1" label="Safety" max_length="50" name="safety" type="choice">
+            <choice>
+                <element label="1" value="1"/>
+                <element label="2" value="2"/>
+                <element label="3" value="3"/>
+                <element label="4" value="4"/>
+                <element label="5" value="5"/>
+            </choice>
+        </element>
+        <element label="Service Manager EID" max_length="40" name="service_manager_eid" type="integer"/>
+        <element label="Service Manager Email" max_length="50" name="service_manager_email" type="string"/>
+        <element label="Service Manager Firstname" max_length="50" name="service_manager_firstname" type="string"/>
+        <element label="Service Manager Lastname" max_length="50" name="service_manager_lastname" type="string"/>
+        <element label="Service Manager Middilename" max_length="50" name="service_manager_middilename" type="string"/>
+        <element label="Service Manager Oracle ID" max_length="40" name="service_manager_oracle_id" type="integer"/>
+        <element choice="1" label="Status" max_length="50" name="status" type="choice">
+            <choice>
+                <element label="-- New choice --" value="-- New choice --"/>
+                <element label="Abandoned" value="Abandoned"/>
+                <element label="Completed" value="Completed"/>
+                <element label="Error" value="Error"/>
+                <element label="New" value="New"/>
+                <element label="Processed" value="Processed"/>
+                <element label="Reminder1" value="Reminder1"/>
+                <element label="Reminder2" value="Reminder2"/>
+                <element label="Reprocess" value="Reprocess"/>
+                <element label="Updated" value="Updated"/>
+            </choice>
+        </element>
+        <element choice="1" label="Teamwork" max_length="50" name="teamwork" type="choice">
+            <choice>
+                <element label="1" value="1"/>
+                <element label="2" value="2"/>
+                <element label="3" value="3"/>
+                <element label="4" value="4"/>
+                <element label="5" value="5"/>
+            </choice>
+        </element>
+        <element label="Total" max_length="15" name="total" read_only="true" type="decimal"/>
+        <index name="index">
+            <element name="acp_id"/>
+        </index>
+        <index name="index2">
+            <element name="form_id"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="safety" table="x_grs_ceff_lines" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>safety</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:55:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>073ed552dbfa5b408a08f35aaf961949</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:55:47</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>safety</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:56:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b4edd12dbfa5b408a08f35aaf961966</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:56:05</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>safety</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:56:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>515ed552dbfa5b408a08f35aaf9619ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:56:11</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>safety</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:56:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bb5e1952dbfa5b408a08f35aaf9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:56:22</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>safety</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5</label>
+            <language>en</language>
+            <name>x_grs_ceff_lines</name>
+            <sequence/>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:56:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>396e1952dbfa5b408a08f35aaf9619ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:56:30</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>safety</element>
+            <name>x_grs_ceff_lines</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2018-06-21 21:55:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>9f8dc53adb0b53c07ddafce9af9619f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>safety</sys_name>
+            <sys_package display_value="Crew/Employee Feedback Form" source="x_grs_ceff">7ee8bb8edb765b408a08f35aaf9619dd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Crew/Employee Feedback Form">7ee8bb8edb765b408a08f35aaf9619dd</sys_scope>
+            <sys_update_name>sys_choice_x_grs_ceff_lines_safety</sys_update_name>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2018-06-21 21:55:47</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
